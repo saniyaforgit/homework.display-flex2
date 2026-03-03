@@ -1,0 +1,36 @@
+.main {
+    display: grid;
+    grid-template-rows: 5em 200px 200px;
+    grid-template-columns: 20px 5em 50%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, 200px) ;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header"
+                         "sidebar content"
+                         "sidebar content"
+    grid-temlate-columns: 150px 1fr;
+    grid-template-rows: 50px 1fr 50px;                     
+}
+
+header {
+    grid-area: header;
+    background: yellow;
+}
+
+aside {
+    grid-area: sidebar;
+    background: gray;
+
+}
+
+main {
+    grid-area: content;
+    background: indigo;
+}
